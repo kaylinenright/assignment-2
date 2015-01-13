@@ -1,0 +1,89 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+body {
+    background-color: black;
+}
+.clock-face {
+    background-image: url("../images/clock-face.svg");
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+.hand-hour {
+    position: absolute;
+    width: 14px;
+    height: 50px;
+    left: calc(50% - 7px);
+    bottom: calc(50% - 7px);
+    transition: all 6s linear;
+    transform-origin: center bottom;
+}
+.hand-minute {
+    position: absolute;
+    width: 14px;
+    height: 85px;
+    left: calc(50% - 7px);
+    bottom: calc(50% - 7px);
+    transition: all 6s linear;
+    transform-origin: center bottom;
+}
+.center {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    bottom: calc(50% - 12px);
+    left: calc(50% - 12px);
+}
+.clock-face:target .hand-hour {
+    transform: rotate(360deg);
+}
+.clock-face:target .hand-minute {
+    transform: rotate(4320deg);
+}
+
+.button-1 {
+    border-radius: 50%;
+    background-color: green;
+    width: 6em;
+    line-height: 6em;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-family: "helvetica", san-serif;
+   margin: 4em 0 1em 4em;
+    transition: all 0.3s linear;
+}
+
+.button-2 {
+    border-radius: 50%;
+    background-color: red;
+    width: 6em;
+    line-height: 6em;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-family: "helvetica", san-serif;
+    margin: 4em 0 1em 4em;
+    transition: all 0.3s linear;
+  
+}
+
+
+.button-1:hover  {
+    background-color: white;
+    color: black;
+}
+
+.button-2:hover  {
+    background-color: white;
+    color: black;
+}
