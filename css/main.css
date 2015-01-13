@@ -47,7 +47,6 @@ body {
 .clock-face:target .hand-minute {
     transform: rotate(4320deg);
 }
-
 .button-1 {
     border-radius: 50%;
     background-color: green;
@@ -58,10 +57,9 @@ body {
     text-decoration: none;
     color: white;
     font-family: "helvetica", san-serif;
-   margin: 4em 0 1em 4em;
+    margin: 4em 0 1em 4em;
     transition: all 0.3s linear;
 }
-
 .button-2 {
     border-radius: 50%;
     background-color: red;
@@ -74,16 +72,12 @@ body {
     font-family: "helvetica", san-serif;
     margin: 4em 0 1em 4em;
     transition: all 0.3s linear;
-  
 }
-
-
-.button-1:hover  {
+.button-1:hover {
     background-color: white;
     color: black;
 }
-
-.button-2:hover  {
+.button-2:hover {
     background-color: white;
     color: black;
 }
